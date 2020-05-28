@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='library.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+			<h1>Perfect Fifth</h1>
+			<h2>Harmonize Together</h2>
+		</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateHome()'>Browse</button>
+				<button class='active'>Library</button>
+				<button onClick='navigateStream()'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button onClick='navigateUpload()'>Upload</button>
+				<button onClick='navigateProfile()'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<div id='linkContainer' onclick='navigateSongResults()'>
+				<h3>Downloads</h3>
+				<h3>></h3>
+			</div>
+			<div id='linkContainer' onclick='navigateArtistResults()'>
+				<h3>Following</h3>
+				<h3>></h3>
+			</div>
+			<div id='linkContainer' onclick='navigateSongResults()'>
+				<h3>Likes</h3>
+				<h3>></h3>
+			</div>
+		</div>
+
+		<script type='text/javascript'>
+			var navigateArtistResults = function() {
+				window.location.assign('http://localhost:8080/artistResults');
+			}
+			var navigateSongResults = function() {
+				window.location.assign('http://localhost:8080/songResults');
+			}
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateUpload = function() {
+				window.location.assign('http://localhost:8080/upload');	
+			}
+			var navigateHome = function() {
+				window.location.assign('http://localhost:8080/dashboard');
+			}
+			var navigateStream = function() {
+				window.location.assign('http://localhost:8080/stream');
+			}
+			var navigateBrowse = function() {
+				window.location.assign('http://localhost:8080/browse');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateProfile = function() {
+				window.location.assign('http://localhost:8080/profile');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='profile.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+			<h1>Perfect Fifth</h1>
+			<h2>Harmonize Together</h2>
+		</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateHome()'>Browse</button>
+				<button onClick='navigateLibrary()'>Library</button>
+				<button onClick='navigateStream()'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button onClick='navigateUpload()'>Upload</button>
+				<button class='active'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<div id='accountInfoContainer'>
+				<div id='accountNameContainer'>
+					<img src="pictures/rapper" width="200" height='200' id='profilePic'>
+					<h4>Lil Kid</h2>
+					<h5>Philadelphia, Pa</h3>
+				</div>
+				<div id='numbersContainer'>
+					<div id='followersContainer'>
+						<h3>Followers</h3>
+						<h3>324</h3>
+					</div>
+					<div id='followingContainer'>
+						<h3>Following</h3>
+						<h3>126</h3>
+					</div>
+					<div id='friendsContainer'>
+						<h3>Friends</h3>
+						<h3>17</h3>
+					</div>
+				</div>
+			</div>
+			<div id='manageMusicContainer'>
+				<h3>Manage Music</h3>
+				<div id='songsContainer'>
+					<div id='song'>
+						<h2>She Never Told Me She Was a Mime</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>I’m Full of Steak, and Cannot Dance</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>His Eyes are Clouded, for He Has Seen the Storm</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>Let's Generalize About Root Vegetables</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>Champaggne for my Real Firends, Real Pain for My Sham Friends</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>What's a Fiberglass?</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>A Sad Day for a Small Group of Politicians</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>Breakfast for Two (It's Spam Again)</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>The Yodeling Veterinarian of the Alps</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+					<div id='song'>
+						<h2>I Ain't Yo Daddy</h2>
+						<div id='songButtonsContainer'>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript'>
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateUpload = function() {
+				window.location.assign('http://localhost:8080/upload');	
+			}
+			var navigateLibrary = function() {
+				window.location.assign('http://localhost:8080/library');
+			}
+			var navigateStream = function() {
+				window.location.assign('http://localhost:8080/stream');
+			}
+			var navigateBrowse = function() {
+				window.location.assign('http://localhost:8080/browse');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateHome = function() {
+				window.location.assign('http://localhost:8080/dashboard');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='upload.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+				<h1>Perfect Fifth</h1>
+				<h2>Harmonize Together</h2>
+			</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateHome()'>Browse</button>
+				<button onClick='navigateLibrary()'>Library</button>
+				<button onClick='navigateStream()'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button class='active'>Upload</button>
+				<button onClick='navigateProfile()'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<h4>Upload your music here!</h4>
+			<form method='get' id='submitTrack'>
+				<div id='fieldContainer'>
+					<label for='title'>Title:</label>
+					<input type='text' name='title' id=title required>
+				</div>
+					<br />
+				<div id='fieldContainer'>
+					<label for='genre'>Genre:</label>
+					<input type='text' name='genre' id='genre' required>
+				</div>
+					<br />
+				<div id='fieldContainer'>
+					<label for='collaborators'>Collaborator:</label>
+					<select name='collaborators' id='collaborators'>
+						<option value='Subtronics'>Subtronics</option>
+						<option value='Luzcid'>Luzcid</option>
+						<option value='Liquid Stranger'>Liquid Stranger</option>
+						<option value='Rezz'>Rezz</option>
+						<opiton value='Stick Figure'>Stick Figure</opiton>
+						<option value='Frosty'>Frosty</option>
+						<option value='Jauz'>Jauz</option>
+						<option value='Skrillex'>Skrillex</option>
+						<option value='Brondo'>Brondo</option>
+						<option value='Bassnectar'>Bassnectar</option>
+						<option value='Jantsen'>Jantsen</option>
+						<option value='EPROM'>EPROM</option>
+						<option value='Code:Pandorum'>Code:Pandorum</option>
+						<option value='Kotori'>Kotori</option>
+						<option value='Billy Ray Cyrus'>Billy Ray Cyrus</option>
+						<option value='Ten Graphs'>Ten Graphs</option>
+						<option value='Excision'>Excision</option>
+						<option value='Virtual Riot'>Virtual Riot</option>
+					</select>
+				</div>
+					<br />
+				<div id='fieldContainer'>
+					<label for='tags'>Tags:</label>
+					<input type='text' name='tags' id='tags' required>
+				</div>
+					<br />
+				<div id='shareContainer'>
+					<label for='share'>Share With:</label>
+					<div id='share'>
+						<input type="radio" name="public">
+						<label for='public'>Public</label>
+							<br />
+						<input type='radio' name='private'>
+						<label for='private'>Private</label>
+							<br />
+						<input type='radio' name='friends'>
+						<label for='friends'>Friends Only</label>
+					</div>
+					<br />
+				</div>
+				<div id='downloadContainer'>
+					<label>Let public download song?</label>
+						<br />
+					<div id='yesBox'>
+						<input type='checkbox' name='downloadable'>
+						<label for='downloadable'>Yes</label> 
+					</div>
+				</div>
+				<input type='submit' value='Upload Song'>
+			</form>
+		</div>
+
+		<script type='text/javascript'>
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateHome = function() {
+				window.location.assign('http://localhost:8080/dashboard');	
+			}
+			var navigateLibrary = function() {
+				window.location.assign('http://localhost:8080/library');
+			}
+			var navigateStream = function() {
+				window.location.assign('http://localhost:8080/stream');
+			}
+			var navigateBrowse = function() {
+				window.location.assign('http://localhost:8080/browse');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateProfile = function() {
+				window.location.assign('http://localhost:8080/profile');
+			}
+		</script>
+	</body>
+</html>

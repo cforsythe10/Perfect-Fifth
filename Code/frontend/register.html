@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<link rel='stylesheet' href='login.css' />
+	</head>
+	<body>
+		<div id='content'>
+			<div id='card'>
+				<div id='inputsContainer'>
+					<div id='loginContainer'>
+						<label for='login'>Username:</label>
+						<input type='text' name='login' id='login' required>
+						<br />
+					</div>
+					<div id='passwordContainer'>
+						<label for='password'>Password:</label>
+						<input type='password' name='password' id='password' required>
+						<br />
+					</div>
+				</div>
+				<div id='buttonsContainer'>
+					<button onClick='submit()'>Register</button> 
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript'>
+			var submit = function() {
+				if($('#login').val()!== '' && $('password').val() !== '') window.location.assign('http://localhost:8080/dashboard');
+			}
+		</script>
+	</body>
+</html>

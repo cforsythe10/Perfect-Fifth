@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='stream.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+			<h1>Perfect Fifth</h1>
+			<h2>Harmonize Together</h2>
+		</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateHome()'>Browse</button>
+				<button onClick='navigateLibrary()'>Library</button>
+				<button class='active'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button onClick='navigateUpload()'>Upload</button>
+				<button onClick='navigateProfile()'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<div id='friendsStreamContainer'>
+				<div id='stream'>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Virtual Riot</h3>
+							<div id='postContent'>
+								<p>We need targeted advertising where your favorite breed of dog suddenly appears in every commercial.</p>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Said The Sky reposted a song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>Illenium x Jon Bellion - Good Things Fall Apart</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>DROELOE reposted a song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>San Holo - brighter days</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Subtronics posted a new song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>Zeds Dead x Subtronics - Bumpy Teeth</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+									<img src='pictures/download' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Similar Outskirts reposted a song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>iFeature - Night to Day</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+									<img src='pictures/download' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContent'>
+						<h3>Rezz</h3>
+						<div id='postContent'>
+							<p>I’m with deadmau5 at my house<br /> <br />I’m trying to convince him to get a pedicure with me</p>
+							<div id='buttons'>
+								<img src='pictures/like' height="20" width="20">
+								<img src='pictures/repost' height='20' width='20'>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>He$h reposted a song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>Boogie T - Deth Bounce</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContent'>
+						<h3>Krewella reposted Deadmau5</h3>
+						<div id='postContent'>
+							<p>@Rezz I'm not getting a pedicure</p>
+							<div id='buttons'>
+								<img src='pictures/like' height="20" width="20">
+								<img src='pictures/repost' height='20' width='20'>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Hi I'm Ghost posted a new song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>Hi I'm Ghost - Ghost Boogie</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContent'>
+						<h3>Code:Pandorum</h3>
+						<div id='postContent'>
+							<p>Get ready for the s̵̱̐̅͜t̴̤̙͉̓à̸̧̨̹͕͉̰͇͇̺̝̗̗̾͘͜͝t̸̯̞͔̦͇̗͔̙͈̬̓̾͛̑͘͝͝i̸͍̤̝̿̉̓̉̅͛ć̴̢̟̼̦̹̲͈̲̈́͂͐̊̚͘</p>
+							<div id='buttons'>
+								<img src='pictures/like' height="20" width="20">
+								<img src='pictures/repost' height='20' width='20'>
+							</div>
+						</div>
+					</div>
+					<div id='streamItemContainer'>
+						<div id='streamItemContent'>
+							<h3>Code:Pandorum posted a new song!</h3>
+							<div id='song'>
+								<div id='songTitleContainer'>
+									<h4>Code:Pandorum - Art of the Devil</h4>
+								</div>
+								<div id='play'>
+									<img src='pictures/play' height="30" width="30">
+									<input id='playbar' type='range' min='0' max='100' value='0'>
+								</div>
+								<div id='buttons'>
+									<img src='pictures/like' height="20" width="20">
+									<img src='pictures/repost' height='20' width='20'>
+									<img src='pictures/download' height='20' width='20'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='rightOfPage'>
+				<textarea rows='30' cols='25'></textarea>
+				<button>Write Post</button>
+			</div>
+		</div>
+
+		<script type='text/javascript'>
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateUpload = function() {
+				window.location.assign('http://localhost:8080/upload');	
+			}
+			var navigateLibrary = function() {
+				window.location.assign('http://localhost:8080/library');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateBrowse = function() {
+				window.location.assign('http://localhost:8080/browse');
+			}
+			var navigateHome = function() {
+				window.location.assign('http://localhost:8080/dashboard');
+			}
+			var navigateProfile = function() {
+				window.location.assign('http://localhost:8080/profile');
+			}
+		</script>
+	</body>
+</html>

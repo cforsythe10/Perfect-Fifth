@@ -1,0 +1,79 @@
+body {
+	min-height: 100vh;
+	margin: 0;
+}
+
+.active {
+	background-color: #555;
+	color: white;
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+}
+
+#pageTopper {
+	background-color: #5834eb;
+	height: 4vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #d3d3d3;
+}
+
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 3vh;
+	padding: 1%;
+	background-color: #5834eb;
+	color: #d3d3d3;
+
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	height: 88.75vh;
+	padding-right: 1%;
+	padding-left: 1%;
+	background-color: #d3d3d3;
+	
+}
+
+#songsContainer {
+	width: 97vw;
+	height: 20vh;
+	background-color: white;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	overflow-y: scroll;
+}
+
+#song {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #dedede;
+}
+
+#playbar {
+	width: 30vw;
+}
+
+#play {
+	display: flex;
+	justify-content: center;
+}
+
+#discoverContainer {
+	height: 32%
+}

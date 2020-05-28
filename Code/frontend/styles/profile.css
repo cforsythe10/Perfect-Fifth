@@ -1,0 +1,162 @@
+body {
+	min-height: 100vh;
+	margin: 0;
+
+}
+
+.active {
+	background-color: #555;
+	color: white;
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+}
+
+#pageTopper {
+	background-color: #5834eb;
+	height: 4vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #d3d3d3;
+}
+
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 3vh;
+	padding: 1%;
+	background-color: #5834eb;
+	color: #d3d3d3;
+
+}
+
+#accountInfoContainer {
+	display: flex;
+	width: 97vw;
+	height: 40vh;
+	border-color: black;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+#numbersContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 45vw;
+}
+
+#accountNameContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 45vw;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	margin-right: 20%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border-radius: 10px
+}
+
+#profilePic {
+	border-radius: 75px;
+	margin-bottom: 15px;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	height: 88.75vh;
+	padding-right: 1%;
+	padding-left: 1%;
+	background-color: #d3d3d3;
+}
+
+#followersContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+}
+
+#followingContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+}
+
+#friendsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: white;
+}
+
+#manageMusicContainer {
+	display: flex;
+	flex-direction: column;
+	width: 97vw;
+	height: 47vh;
+	align-items: center;
+}
+
+#songsContainer {
+	width: 97vw;
+	background-color: white;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	overflow-y: scroll;
+}
+
+#song {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #dedede;
+}
+
+#playbar {
+	width: 30vw;
+}
+
+#play {
+	display: flex;
+	justify-content: center;
+}

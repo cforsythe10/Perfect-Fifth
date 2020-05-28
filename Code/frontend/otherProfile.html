@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='profile.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+			<h1>Perfect Fifth</h1>
+			<h2>Harmonize Together</h2>
+		</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateHome()'>Browse</button>
+				<button onClick='navigateLibrary()'>Library</button>
+				<button onClick='navigateStream()'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button onClick='navigateUpload()'>Upload</button>
+				<button onClick='navigateProfile()'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<div id='accountInfoContainer'>
+				<div id='accountNameContainer'>
+					<img src="pictures/vr" width="150" height='150' id='profilePic'>
+					<h4>Virtual Riot</h3>
+					<h5>Mennheim, Germany</h4>
+					<button>Unfollow</button>
+					<button>Unfriend</button>
+				</div>
+				<div id='numbersContainer'>
+					<div id='followersContainer'>
+						<h3>Followers</h3>
+						<h3>309K</h3>
+					</div>
+					<div id='followingContainer'>
+						<h3>Following</h3>
+						<h3>640</h3>
+					</div>
+					<div id='friendsContainer'>
+						<h3>Friends</h3>
+						<h3>340</h3>
+					</div>
+				</div>
+			</div>
+			<div id='manageMusicContainer'>
+				<h3>Virtual Riot's Music</h3>
+				<div id='songsContainer'>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Energy Drink</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Lost It</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Lost It VIP</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - One Two</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Pray For Riddim</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Das Riddim</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - Preset Junkies VIP</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+					<div id='song'>
+						<div id='songTitleContainer'>
+							<h4>Virtual Riot - In My Head</h4>
+						</div>
+						<div id='play'>
+							<img src='pictures/play' height="30" width="30">
+							<input id='playbar' type='range' min='0' max='100' value='0'>
+						</div>
+						<div id='buttons'>
+							<img src='pictures/like' height="20" width="20">
+							<img src='pictures/repost' height='20' width='20'>
+							<img src='pictures/download' height='20' width='20'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript'>
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateProfile = function() {
+				window.location.assign('http://localhost:8080/profile');
+			} 
+			var navigateUpload = function() {
+				window.location.assign('http://localhost:8080/upload');	
+			}
+			var navigateLibrary = function() {
+				window.location.assign('http://localhost:8080/library');
+			}
+			var navigateStream = function() {
+				window.location.assign('http://localhost:8080/stream');
+			}
+			var navigateBrowse = function() {
+				window.location.assign('http://localhost:8080/browse');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateHome = function() {
+				window.location.assign('http://localhost:8080/dashboard');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Perfect Fifth</Title>
+			<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel='stylesheet' href='results.css' type='text/css' />
+	</head>
+	<body>
+		<div id ='pageTopper'>
+			<h1>Perfect Fifth</h1>
+			<h2>Harmonize Together</h2>
+		</div>
+		<div id='header'>
+			<div id='navButtonsContainer'>
+				<button onClick='navigateDashboard()'>Browse</button>
+				<button onClick='navigateLibrary()'>Library</button>
+				<button onClick='navigateStream()'>Stream</button>
+				<button onClick='navigateFriends()'>Friends</button>
+			</div>
+			<div id='searchContainer'>
+				<label for='searchBar'>Search:</label>
+				<input type='text' id='searchBar'>
+				<button onClick='searchRequest()'>Search</button>
+			</div>
+			<div id='buttonsContainer'>
+				<button onClick='navigateUpload()'s>Upload</button>
+				<button onClick='navigateProfile()'>You</button>
+			</div>
+		</div>
+		<div id='content'>
+			<h3>Results</h3>
+			<div id='resultsContainer'>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Subtronics x Rusko - Bounce Back</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Logic - Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Big Sean - Bounce Back</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Boogie T - Deth Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Masego x Medasin - Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>System Of A Down - Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Flatbush Zombies - Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Lil Wayne x 2 Chainz - Bounce</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+				<div id='song'>
+					<div id='songTitleContainer'>
+						<h4>Calvin Harris x Kelis - Bounce (feat. Kelis)</h4>
+					</div>
+					<div id='play'>
+						<img src='pictures/play' height="30" width="30">
+						<input id='playbar' type='range' min='0' max='100' value='0'>
+					</div>
+					<div id='buttons'>
+						<img src='pictures/like' height="20" width="20">
+						<img src='pictures/repost' height='20' width='20'>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<script type='text/javascript'>
+			var navigateDashboard = function() {
+				window.location.assign('http://localhost:8080/dashboard');
+			}
+			var searchRequest = function() {
+				window.location.assign('http://localhost:8080/results');
+			} 
+			var navigateUpload = function() {
+				window.location.assign('http://localhost:8080/upload');	
+			}
+			var navigateLibrary = function() {
+				window.location.assign('http://localhost:8080/library');
+			}
+			var navigateStream = function() {
+				window.location.assign('http://localhost:8080/stream');
+			}
+			var navigateFriends = function() {
+				window.location.assign('http://localhost:8080/friends');
+			}
+			var navigateProfile = function() {
+				window.location.assign('http://localhost:8080/profile');
+			}
+		</script>
+	</body>
+</html>
